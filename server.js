@@ -4,6 +4,12 @@ import fs from 'fs/promises';
 http.createServer((req, res) => {
     const myURL = new URL(req.url, `http://${req.headers.host}`);
 
+    if(myURL.pathname === '/favicon.ico'){
+        res.writeHead(204);
+        res.end();
+        return
+    }
+
     const fileName = checkURL(myURL);
 
     serveFile(res, fileName);
