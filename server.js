@@ -2,8 +2,9 @@ import http from 'http';
 import fs from 'fs/promises';
 
 http.createServer((req, res) => {
-  
-    const fileName = './index.html';
+    const myURL = new URL(req.url, `http://${req.headers.host}`);
+
+    const fileName = checkURL(myURL);
 
     serveFile(res, fileName);
 
@@ -25,5 +26,21 @@ const serveFile = async (res, fileName) => {
         res.writeHead(500);
 
         res.end('Internal Server Error');
+    }
+}
+
+const checkURL = (myURL) => {
+
+    switch (myURL.pathname) {
+        case '/':
+            return './index.html';
+        case '/quote002':
+             return './quote002.html';
+        case '/quote003':
+             return './quote003.html';
+        case '/quote004':
+             return './quote004.html';
+        default:
+            return './404.html';
     }
 }
