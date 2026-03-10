@@ -2,10 +2,11 @@ import http from 'http';
 import fs from 'fs/promises';
 
 http.createServer((req, res) => {
-  res.end('Hello world');
-
-  serveFile(res, fileName = './index.html');
   
+    const fileName = './index.html';
+
+    serveFile(res, fileName);
+
 }).listen(8080);
 
 const serveFile = async (res, fileName) => {

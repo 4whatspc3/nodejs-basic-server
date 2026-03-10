@@ -2,6 +2,7 @@
   "name": "nodejs-basic-server",
   "version": "1.0.0",
   "description": "This project is a small practice exercise focused on learning the **fundamentals of Node.js**, especially how to work with the built-in `http` module to create a basic web server.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
