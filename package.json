@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-basic-server",
+  "version": "1.0.0",
+  "description": "This project is a small practice exercise focused on learning the **fundamentals of Node.js**, especially how to work with the built-in `http` module to create a basic web server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4whatspc3/nodejs-basic-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4whatspc3/nodejs-basic-server/issues"
+  },
+  "homepage": "https://github.com/4whatspc3/nodejs-basic-server#readme"
+}
