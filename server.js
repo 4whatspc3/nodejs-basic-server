@@ -34,12 +34,12 @@ const checkURL = (myURL) => {
     switch (myURL.pathname) {
         case '/':
             return './index.html';
-        case '/quote002':
-             return './quote002.html';
-        case '/quote003':
-             return './quote003.html';
-        case '/quote004':
-             return './quote004.html';
+        case '/quote02':
+             return './quote02.html';
+        case '/quote03':
+             return './quote03.html';
+        case '/quote04':
+             return './quote04.html';
         default:
             return './404.html';
     }
